@@ -17,7 +17,7 @@ engine = sqlalchemy.create_engine('mysql+pymysql://crm_user:HTGxvM6McF,3Zb.p@loc
 
 
 mb = Metabase_API('https://hq-dashboard.nhancebyphoenix.com/', 'shubham@unifynd.com', '123KIngsley!')
-print("Fetching users")
+print("Fetching users.")
 users=mb.get_card_data(card_id=2261)
 print("users fetched")
 users2=pd.DataFrame(users)
